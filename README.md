@@ -10,10 +10,16 @@ A responsive home page made with HTML, SASS and JavaScript. The page can be chan
 
 ### Light Mode: 
 
-![Screenshot](https://github.com/nacho1520/faq-page/blob/main/public/shot.png)
+![LightMode](https://github.com/nacho1520/alarado-homepage/blob/main/public/desk-light.png)
 
 ### Dark Mode:
 
+![DarkMode](https://github.com/nacho1520/alarado-homepage/blob/main/public/desk-dark.png)
+
 ### Mobile:
 
+![Mobile](https://github.com/nacho1520/alarado-homepage/blob/main/public/mobile.png)
+
 ### Mobile with menu opened: 
+
+![Mobile](https://github.com/nacho1520/alarado-homepage/blob/main/public/mobile-menu.png)
