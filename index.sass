@@ -1,0 +1,239 @@
+*
+    margin: 0
+    padding: 0
+    font-family: "Poppins", sans-serif
+
+body
+    background-color: #F2F9FE
+    display: flex
+    flex-direction: column
+    align-items: center
+    &.dark
+        background-color: #111729
+
+.header
+    width: 90%
+    margin-top: 28px 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    img
+        display: none
+        &.active
+            display: block
+    .hamburguer-menu
+        display: block
+        cursor: pointer
+    .tabs
+        display: none
+        .tab
+            background: none
+            border: none
+            outline: none
+            cursor: pointer
+            font-size: 0.875rem
+            color: #909193
+            font-weight: 600
+
+.mobile-menu
+    display: none
+    padding: 50px 0 20px 0
+    position: absolute
+    right: 0
+    top: 0
+    background-color: #FFFFFF
+    width: 423px
+    height: 100%
+    z-index: 10
+    .x-btn
+        position: absolute
+        right: 30px
+        top: 30px
+        cursor: pointer
+        width: 22px
+        height: 17px
+    .mobile-tab
+        font-size: 3rem
+        font-weight: 600
+        margin-bottom: 30px
+        color: #677489
+    .mobile-selected
+        font-size: 3rem
+        font-weight: 600
+        margin-bottom: 30px
+        color: #223344
+        &.dark
+            color: #F2F9FE
+    &.active
+        display: flex
+        flex-direction: column
+        align-items: center
+    
+.mobile-menu-dark
+    background-color: #111729
+
+
+.selected
+    background: none
+    border: none
+    outline: none
+    cursor: pointer
+    font-size: 0.875rem
+    font-weight: 600
+    color: #223344
+    &.dark
+        color: #F2F9FE
+
+main
+    width: 90%
+    margin-top: 92px
+    display: grid
+    .left-section
+        grid-column: 1
+        grid-row: 2
+        display: flex
+        flex-direction: column
+        margin-bottom: 40px
+    .right-section
+        grid-row: 1
+        grid-column: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 60px
+        img
+            width: 552px
+.title
+    width: 80%
+    margin-bottom: 32px
+    span
+        font-size: 0.875rem
+        color: #223344
+        font-weight: 600
+        margin-bottom: 12px
+        &.dark
+            color: #F2F9FE
+    h1
+        font-size: 3.75rem
+        color: #223344
+        font-weight: bold
+        &.dark
+           color: #F2F9FE 
+
+.quote
+    width: 80%
+    font-size: 1.125rem
+    color: #677489
+
+.buttons-container
+    margin-top: 22px
+    margin-bottom: 40px
+    display: inline-flex
+    flex-wrap: wrap
+    gap: 32px
+
+.primary-btn
+    padding: 16px 32px 16px 32px
+    background-color: #2A4DD0
+    border: none
+    outline: none
+    border-radius: 12px
+    color: #FFFFFF
+    cursor: pointer
+    font-size: 1rem
+    font-weight: 700
+
+.link-btn
+    background: none
+    border: none
+    color: #2A4DD0
+    font-size: 1rem
+    font-weight: 700
+    text-decoration-line: underline
+    cursor: pointer
+
+.checks-container
+    display: inline-flex
+    flex-wrap: wrap
+    gap: 20px
+    .check
+        display: flex
+        align-items: center
+        p
+            margin-left: 8
+            color: #677489
+            font-weight: 500
+            font-size: 0.875rem
+
+.toggle-container
+    display: none
+
+.mode-toggle
+    display: inline-flex
+    align-items: center
+    background-color: #223344
+    gap: 4px
+    padding: 2px 2px 2px 2px
+    border-radius: 20px
+    cursor: pointer
+    img
+        width: 16px
+        height: 16px
+        display: none
+        &.active
+            display: block
+    .mode-container
+        width: 20px
+        height: 20px
+        background-color: #F2F9FE
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        &.dark 
+            background-color: #223344
+
+@media (min-width: 768px)
+    .header
+        .tabs
+            display: inline-flex
+            gap: 40px
+        .hamburguer-menu
+            display: none
+    
+    .toggle-container
+        display: block
+
+    .mobile-menu
+        display: none
+        &.active
+            display: none
+
+    .title
+        width: 100%
+
+    .quote
+        width: 50%
+
+@media (min-width: 1200px)
+    main
+        .left-section
+            grid-row: 1
+            grid-column: 1
+        .right-section
+            grid-row: 1
+            grid-column: 2
+            justify-content: flex-end
+    
+    .title
+        width: 70%
+    
+    .quote
+        width: 80%
+
+@media (min-width: 1800px)
+    .title
+        width: 40%
+    
+    .quote
+        width: 40%

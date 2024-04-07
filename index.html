@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+<body>
+    <section class="header">
+        <img src="./assets/alarado-icon-homepage.svg" class="active" id="logo">
+        <img src="./assets/alarado-icon-homepage-dark.svg" id="logo">
+
+        <div class="tabs">
+            <button class="selected">About us</button>
+            <button class="tab">Product</button>
+            <button class="tab">Resource</button>
+            <button class="tab">Contact</button>
+        </div>
+
+        <div class="toggle-container"> 
+            <div class="mode-toggle">
+                <div class="mode-container dark">
+                    <img src="./assets/Moon_fill_light.svg" class="active" id="toggle-img">
+                    <img src="./assets/Moon_fill.svg" id="toggle-img">
+                </div>
+                <div class="mode-container">
+                    <img src="./assets/Sun_fill.svg" class="active" id="toggle-img">
+                    <img src="./assets/Sun_fill_light.svg" id="toggle-img">
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/Hamburguer-menu.svg" class="hamburguer-menu">
+    </section>
+
+    <div class="mobile-menu">
+        <img src="./assets/x-button.svg" class="x-btn">
+        <p class="mobile-selected">About us</p>
+        <p class="mobile-tab">Product</p>
+        <p class="mobile-tab">Resource</p>
+        <p class="mobile-tab">Contact</p>
+        <div class="mode-toggle" id="mobile-toggle">
+            <div class="mode-container dark">
+                <img src="./assets/Moon_fill_light.svg" class="active" id="toggle-img">
+                <img src="./assets/Moon_fill.svg" id="toggle-img">
+            </div>
+            <div class="mode-container">
+                <img src="./assets/Sun_fill.svg" class="active" id="toggle-img">
+                <img src="./assets/Sun_fill_light.svg" id="toggle-img">
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="left-section">
+            <div class="title">
+                <span id="title-span">😎  SIMPLE WAY TO COMMUNICATE</span>
+                <h1 id="title">
+                    Actions for Accessibility in Design
+                </h1>
+            </div>
+            <p class="quote">The fastest way to build and deploy websites with resusable components.</p>
+            <div class="buttons-container">
+                <button class="primary-btn">GET STARTED</button>
+                <button class="link-btn">Get live demo</button>
+            </div>
+            <div class="checks-container">
+                <div class="check">
+                    <img src="./assets/Done_ring_round_fill.svg">
+                    <p>No credit card required</p>
+                </div>
+                <div class="check">
+                    <img src="./assets/Done_ring_round_fill.svg">
+                    <p>No software to install</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-section">
+            <img src="./assets/hero-image-simple-homepage.png">
+        </section>
+    </main>
+</body>
+    <script src="./index.js"></script>
+</html>
